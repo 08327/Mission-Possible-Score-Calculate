@@ -1,0 +1,11 @@
+{
+  "name": "mission-possible-score-calculate",
+  "version": "1.0.0",
+  "description": "Static scoring calculator for Mission Possible challenge (serves files locally)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Xuanzhi Zhu <sean08327@gmail.com>",
+  "license": "UNLICENSED"
+}
