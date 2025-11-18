@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+Mission Possible - 25 ~ 26
+Xuanzhi Zhu
+june 12, 2024
+
+If you have any questions, please contact me via email.
+student email: sean08327@gmail.com 
+
+***Quality not assurance. Use at your own risk.***
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Possible</title>
+    <link rel="styleSheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Mission Possible</h1>
+        <img src="https://c.tenor.com/owVP4w86YagAAAAd/tenor.gif" alt="cat shake the coke">
+        <img src="xuanzhiLogo.png" alt="xuanzhiLogo">
+    </div>
+    
+    <p style="font-weight:bold; color:red">***Quality not assurance. Use at your own risk.***</p>
+    
+    <H1>Final Points: <span id="finalPoints">0</span></H1>
+
+    <table>
+        <tr>
+            <td>
+                <p class="label">The setup time</p>
+                <p>Setup Time: <input type="number" id="setupTime" name="setupTime" min="0"> min</p>
+
+                <p class="label">The dimension</p>
+                <p>Length: <input type="number" id="length" name="length" min="0"> cm</p>
+                <p>Width: <input type="number" id="width" name="width" min="0"> cm</p>
+                <p>Height: <input type="number" id="height" name="height" min="0"> cm</p>
+                <p>Is Wall Transparent: <input type="checkbox" id="isWallTransparent" name="isWallTransparent"></p>
+
+                <p class="label">ASL sheet</p>
+                <p>
+                    Number of sheets: <input type="number" id="numberOfSheets" name="numberOfSheets" min="0">
+                    <br>
+                    <input type="checkbox" id="properFormat" name="properFormat">
+                    <label for="properFormat">Proper Format</label><br>
+                    <input type="checkbox" id="accurateDescribed" name="accurateDescribed">
+                    <label for="accurateDescribed">Accurate Described</label><br>
+                    <input type="checkbox" id="labledAndRoman" name="labledAndRoman">
+                    <label for="labledAndRoman">Labled and Roman Numerals</label><br>
+                </p>
+
+                <p class="label">Offical Run</p>
+                <p>Is start actions complete: <input type="checkbox" id="isStartActionsComplete"
+                        name="isStartActionsComplete"> </p>
+
+                <p>Number of actions in first run: <input type="number" id="numberOfActions" name="numberOfActions"
+                        min="0"></p>
+
+                <p>Number of items goes to right place: <input type="number" id="numberOfItems" name="numberOfItems"
+                        min="0"></p>
+                <p>Number of items goes to wrong place: <input type="number" id="numberOfItemsWrong"
+                        name="numberOfItemsWrong" min="0"></p>
+
+                <p>Number of 10 out 10 in bucket: <input type="number" id="numberOf10" name="numberOf10" min="0"></p>
+
+                <p>Is bell ringed: <input type="checkbox" id="bellRinged" name="bellRinged"></p>
+
+                <p>Operation time: <input type="number" id="operationTime" name="operationTime" min="0"> seconds</p>
+
+                <p>Sand Timer: <input type="number" id="sandTimer" name="sandTimer" min="0"> seconds</p>
+
+                <p>Number of Adjustments: <input type="number" id="numberOfAdjustments" name="numberOfAdjustments"
+                        min="0"></p>
+
+                <p>Is liquid out of place: <input type="checkbox" id="isLiquidOutOfPlace" name="isLiquidOutOfPlace"></p>
+                <button onclick="calculateFinalPoints()">Calculate Points</button>
+            </td>
+            <td>
+                <p class="label">This part is after each step, how much point they get.</p>
+                <br>
+                <div id="detailScore"></div>
+            </td>
+        </tr>
+    </table>
+    <p>copy right </p>
+    <script src="./script.js" lang="js"></script>
+
+</body>
+
+</html>
